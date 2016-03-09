@@ -1,0 +1,14 @@
+require 'test_helper'
+
+class WelcomeControllerTest < ActionController::TestCase
+  test "should get homepage" do
+    get :homepage
+    assert_response :success
+
+client = Octokit::Client.new(:login => 'kelagar', :password => 'Experience1')
+#Fetch the current user
+Octokit.user 'kelagar'
+puts user.name
+  end
+
+end

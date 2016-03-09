@@ -1,0 +1,11 @@
+class WelcomeController < ApplicationController
+  def homepage
+  end
+
+  end
+
+client = Octokit::Client.new(:login => 'kelagar', :password => 'Experience1')
+#Fetch the current user
+Octokit.user 'kelagar'
+puts user.name
+end
