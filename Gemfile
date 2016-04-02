@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#Install json
+gem "json"
 #octokit
 gem "octokit","~> 4.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

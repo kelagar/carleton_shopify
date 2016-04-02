@@ -1,0 +1,15 @@
+gem "octokit", "~> 4.3.0"
+
+# Provide authentication credentials
+Octokit.configure do |c|
+  c.login = 'defunkt'
+  c.password = 'c0d3b4ssssss!'
+end
+
+#Enterprise
+Octokit.configure do |c|
+  c.api_endpoint = "kelagar/api/v3/"
+  c.access_token = "2f0565b9adf0c3d09c0502b51188e127ba9dfcd7"
+end
+admin_client = Octokit.enterprise_admin_client
+

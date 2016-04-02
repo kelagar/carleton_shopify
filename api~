@@ -1,0 +1,20 @@
+#Octokit gem
+gem "octokit", "~> 4.3.0"
+gem install octokit
+
+#Configure connection
+Octokit.configure do |c|
+c.login = 'kelagar'
+c.password = 'experience1'
+end
+
+#Get user info for kelagar
+Octokit.user
+
+#Get user info for Safa
+Octokit.user('safahakimpour')
+
+
+
+
+
